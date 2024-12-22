@@ -1,0 +1,33 @@
+{
+    "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+    "name": "com_example",
+    "version": "1.0.0",
+    "description": "Example joomla.asset.json file",
+    "license": "GPL-2.0+",
+    "assets": [
+        {
+            "name": "plg_uikit.jsuikit",
+            "type": "script",
+            "uri": "plg_system_uikit/uikit.min.js",
+            "dependencies": [
+                "core"
+            ],
+            "version": "3.21.16"
+        },
+        {
+            "name": "plg_uikit.iconsuikit",
+            "type": "script",
+            "uri": "plg_system_uikit/uikit.icon.min.js",
+            "dependencies": [
+                "plg_uikit.jsuikit"
+            ],
+            "version": "3.21.16"
+        },
+        {
+            "name": "plg_uikit.stylesuikit",
+            "type": "style",
+            "uri": "plg_system_uikit/uikit.min.css",
+            "version": "3.21.16"
+        }
+    ]
+}

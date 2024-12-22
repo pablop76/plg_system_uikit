@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" method="upgrade">
+    <name>PLG_SYSTEM_UIKIT</name>
+    <author>pablop76</author>
+    <version>1.0.0</version>
+    <description>PLG_SYSTEM_UIKIT_DESCRIPTION</description>
+    <creationDate>22.12.24</creationDate>
+    <copyright>(C) 2024 Open Source Matters, Inc.</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <namespace path="src">Pablop76\Plugin\System\Uikits</namespace>
+    <files>
+        <folder plugin="uikit">services</folder>
+        <folder>src</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="jsuikit"
+                    type="url"
+                    default=""
+                    label="Enter a URL UIkit CDN"
+                    description=""
+                    size="10"
+                />
+                <field
+                    name="iconsuikit"
+                    type="url"
+                    default=""
+                    label="Enter a URL UIkit Icon CDN"
+                    description=""
+                    size="10"
+                />
+                <field
+                    name="stylesuikit"
+                    type="url"
+                    default=""
+                    label="Enter a URL UIkit Style CDN"
+                    description=""
+                    size="10"
+                />
+            </fieldset>
+        </fields>
+    </config>
+    <media destination="plg_system_uikit" folder="media">
+        <filename>joomla.asset.json</filename>
+        <folder>js</folder>
+        <folder>css</folder>
+    </media>
+    <languages>
+        <language tag="en-GB">language/en-GB/plg_system_uikit.ini</language>
+        <language tag="en-GB">language/en-GB/plg_system_uikit.sys.ini</language>
+        <language tag="pl-PL">language/pl-PL/plg_system_uikit.ini</language>
+        <language tag="pl-PL">language/pl-PL/plg_system_uikit.sys.ini</language>
+    </languages>
+</extension>
