@@ -1,1 +1,1 @@
-# Dodatej Uikit dla Joomla
+# Dodatek Uikit dla Joomla
