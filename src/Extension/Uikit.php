@@ -14,7 +14,7 @@ class Uikit extends CMSPlugin implements SubscriberInterface
     public static function getSubscribedEvents(): array
     {
         return [
-            'onContentPrepare' => 'addMedia',
+            'onBeforeCompileHead' => 'addMedia',
         ];
     }
 
