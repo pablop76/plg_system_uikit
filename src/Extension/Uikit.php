@@ -29,14 +29,14 @@ class Uikit extends CMSPlugin implements SubscriberInterface
         $wa->getRegistry()->addExtensionRegistryFile('plg_system_uikit');
 
         $customJsUrl = $this->params->get('jsuikit');
-        $customIconUrl = $this->params->get('iconsuikit');
-        $customCssUrl = $this->params->get('stylesuikit');
+        $customIconUrl = $this->params->get('iconuikit');
+        $customCssUrl = $this->params->get('styleuikit');
 
         if($customJsUrl){
-            $wa->registerStyle('mainjs', $customJsUrl);
+            $wa->registerScript('mainjs', $customJsUrl);
         }
         if($customIconUrl){
-            $wa->registerStyle('mainicon', $customIconUrl);
+            $wa->registerScript('mainicon', $customIconUrl);
         }
         if($customCssUrl){
             $wa->registerStyle('maincss', $customCssUrl);
@@ -50,12 +50,12 @@ class Uikit extends CMSPlugin implements SubscriberInterface
         if ($wa->assetExists('script', 'mainicon')) {
             $wa->useScript('mainicon');
         }else{
-            $wa->useScript('plg_uikit.iconsuikit');
+            $wa->useScript('plg_uikit.iconuikit');
         }
         if ($wa->assetExists('style', 'maincss')) {
             $wa->useStyle('maincss');
         }else{
-            $wa->useStyle('plg_uikit.stylesuikit');
+            $wa->useStyle('plg_uikit.styleuikit');
         }
     }
 }

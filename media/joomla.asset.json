@@ -15,7 +15,7 @@
             "version": "3.21.16"
         },
         {
-            "name": "plg_uikit.iconsuikit",
+            "name": "plg_uikit.iconuikit",
             "type": "script",
             "uri": "plg_system_uikit/uikit-icons.min.js",
             "dependencies": [
@@ -24,7 +24,7 @@
             "version": "3.21.16"
         },
         {
-            "name": "plg_uikit.stylesuikit",
+            "name": "plg_uikit.styleuikit",
             "type": "style",
             "uri": "plg_system_uikit/uikit.min.css",
             "version": "3.21.16"
